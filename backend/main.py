@@ -17,7 +17,7 @@ class QueryRequest(BaseModel):
 
 # --- Database Connection ---
 # Make sure this is your correct Supabase connection string
-DATABASE_URL = "postgresql://postgres:nishchhal12345@db.otsablanmtjgmovdpgxu.supabase.co:5432/postgres" 
+DATABASE_URL = "postgresql://postgres.otsablanmtjgmovdpgxu:nishchhal12345@aws-1-ap-south-1.pooler.supabase.com:6543/postgres" 
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
