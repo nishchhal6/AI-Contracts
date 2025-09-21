@@ -16,7 +16,7 @@ export default function AllContractsPage() {
         return;
       }
       try {
-        const response = await axios.get("http://127.0.0.1:8000/contracts", {
+        const response = await axios.get("https://ai-contracts-backend.onrender.com/contracts", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setContracts(response.data);
