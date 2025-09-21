@@ -81,7 +81,8 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: sessionmaker = Dep
 app = FastAPI(title="Contract Analysis API")
 
 origins = [
-    "http://localhost:5173",  # The address of your React frontend
+    "http://localhost:5173",
+    "https://ai-contract.vercel.app", 
 ]
 
 app.add_middleware(
