@@ -82,7 +82,7 @@ app = FastAPI(title="Contract Analysis API")
 
 origins = [
     "http://localhost:5173",
-    "https://ai-contract.vercel.app", 
+    "https://ai-contracts-beta.vercel.app", 
 ]
 
 app.add_middleware(
