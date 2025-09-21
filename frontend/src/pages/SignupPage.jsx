@@ -36,7 +36,7 @@ export default function SignupPage() {
 
     try {
       // Send the request to the /signup endpoint
-      await axios.post("http://127.0.0.1:8000/signup", params, {
+      await axios.post("https://ai-contracts-backend.onrender.com/signup", params, {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
