@@ -25,7 +25,7 @@ export default function LoginPage() {
 
     try {
       // Send a POST request to the backend's login endpoint
-      const response = await axios.post("http://127.0.0.1:8000/token", params, {
+      const response = await axios.post("https://ai-contracts-backend.onrender.com/token", params, {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
